@@ -9,7 +9,7 @@
     $width: map.get(var.$breakpoints, $bp);
 
     @if $type == max {
-      $width: $width- 0.02px;
+      $width: $width - 0.02px;
     }
 
     @media only screen and (#{$type}-width: $width) {
