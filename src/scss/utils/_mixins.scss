@@ -1,10 +1,10 @@
-@use 'saaa:map';
+@use 'sass:map';
 @use 'sass:list';
 
 @use 'functions' as fn;
 @use 'variables' as var;
 
-@mixin mq($bp: sm, $type: min, $is-retin: false) {
+@mixin mq($bp: sm, $type: min, $is-retina: false) {
   @if map.has-key(var.$breakpoints, $bp) {
     $width: map.get(var.$breakpoints, $bp);
 
